@@ -79,7 +79,7 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/How_To_Download_Movie
 # ============================
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'indiaearnx.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '86b2818c135d6d77b744e23e52f5e647efc3ebc1)
+SHORTLINK_API = environ.get('SHORTLINK_API', '86b2818c135d6d77b744e23e52f5e647efc3ebc1')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_To_Download_Movie_Video/7')  # Tutorial video link for opening shortlink website
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 
