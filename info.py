@@ -28,7 +28,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://envs.sh/aL3.jpg')).split()  # Sample pic
+PICS = (environ.get('PICS', 'https://vault.pictures/media/images/99/5b/96/995b962bc953414fa2c7c1ed69fafbe4.jpg')).split()  # Sample pic
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://envs.sh/j2m.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/13702ae26fb05df52667c.jpg")
@@ -44,20 +44,20 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001786924542'))  # Log channel id (make sure bot is admin)
 DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002273359017'))  # Notification of those who verify will be sent to your channel
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1001786924542'))  # Premium logs channel id
-auth_channel = environ.get('AUTH_CHANNEL', '-1002273359017')  # Channel/Group ID for force sub (make sure bot is admin)
+auth_channel = environ.get('AUTH_CHANNEL', '-1001951315119')  # Channel/Group ID for force sub (make sure bot is admin)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1001786924542').split()]
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002001530907')  # Support group id (make sure bot is admin)
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002115486459')  # Request channel id (make sure bot is admin)
-AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002273359017').split()]
-MULTI_FSUB = [int(channel_id) for channel_id in environ.get('AUTH_CHANNEL', '-1002273359017 -1002468720216 -1002456676056').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
+AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1001951315119').split()]
+MULTI_FSUB = [int(channel_id) for channel_id in environ.get('AUTH_CHANNEL', '-1001951315119').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
 
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://teekam_jaat:9571404334@teekam.dwrhczx.mongodb.net/?retryWrites=true&w=majority&appName=Teekam")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://teekam9079:teekam@teekam.iz7qm.mongodb.net/?retryWrites=true&w=majority&appName=Teekam")
-DATABASE_NAME = environ.get('DATABASE_NAME', "tjbot")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'tjbotdatabase')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://xayon:xayonKEYNOrMeZS@cluster0.8baso.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://xayon:xayonOE1c91KmMt@cluster0.rb5j4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "xayon")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Piro')
 
 # ============================
 # Movie Notification & Update Settings
@@ -69,7 +69,7 @@ CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla
 # ============================
 # Verification Settings
 # ============================
-VERIFY = bool(environ.get('VERIFY', False))  # Verification On (True) / Off (False)
+VERIFY = bool(environ.get('VERIFY', True))  # Verification On (True) / Off (False)
 DEENDAYAL_VERIFY_EXPIRE = int(environ.get('DEENDAYAL_VERIFY_EXPIRE', 24))  # Add time in hours
 DEENDAYAL_VERIFIED_LOG = int(environ.get('DEENDAYAL_VERIFIED_LOG', '-1001786924542'))  # Log channel id (make sure bot is admin)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/How_To_Download_Movie_Video/7')  # How to open tutorial link for verification
@@ -78,19 +78,19 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/How_To_Download_Movie
 # Link Shortener Configuration
 # ============================
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shortxlinks.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '40953a3cd91c66b8fb8ebc21e301dd3d87e29607')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'indiaearnx.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '86b2818c135d6d77b744e23e52f5e647efc3ebc1)
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_To_Download_Movie_Video/7')  # Tutorial video link for opening shortlink website
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+sBQBAjfyKqM5YWY1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+WUxToIDu24liMjVl')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+nDcTiUDXlagxMDI1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/CINBox')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/TJ_OWNER_BOT')
-DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/+WUxToIDu24liMjVl')
-OWNERID = int(os.environ.get('OWNERID', '7121307447'))  # Replace with the actual admin ID
+DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/CINBox')
+OWNERID = int(os.environ.get('OWNERID', '5469498838'))  # Replace with the actual admin ID
 
 # ============================
 # User Configuration
