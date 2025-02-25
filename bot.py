@@ -1,4 +1,3 @@
-
 import sys
 import glob
 import importlib
@@ -30,7 +29,7 @@ from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from Script import script 
 from datetime import date, datetime 
-import pytz
+7import pytz
 from aiohttp import web
 from plugins import web_server, check_expired_premium
 
@@ -43,8 +42,8 @@ botStartTime = time.time()
 
 ppath = "plugins/*.py"
 files = glob.glob(ppath)
-DeendayalBot.start()
-loop = asyncio.get_event_loop()
+await DeendayalBot.start()
+asyncio.run(Deendayal_start())
 
 async def Deendayal_start():
     print('\n')
