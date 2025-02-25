@@ -14,11 +14,12 @@ from aiohttp import web
 
 from database.ia_filterdb import Media, Media2, choose_mediaDB, tempDict, db as clientDB
 from database.users_chats_db import db
-from info import *
-from utils import temp
-from Script import script
-from plugins import web_server, check_expired_premium
-from Deendayal_botz.Bot import DeendayalBot
+from info import *  # Ensure info.py exists
+from utils.temp import temp  # Direct import to avoid circular issues
+from Script.script import script  # Correct relative import
+from plugins.web_server import web_server
+from plugins.check_expired_premium import check_expired_premium
+from Deendayal_botz.Bot.DeendayalBot import DeendayalBot
 from Deendayal_botz.util.keepalive import ping_server
 from Deendayal_botz.Bot.clients import initialize_clients
 
